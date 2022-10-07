@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node-app:
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+    command: node app.js 
+    ports:
+      - "2000:4000" 
